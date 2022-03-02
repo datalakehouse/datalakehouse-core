@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SQUARE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the customers dimension table",
+  columns: {
+ 
+    K_POS_CUSTOMER_DLHK: "DataLakeHouse key of the customer",
+  },
+  assertions: {
+    uniqueKey: ["K_POS_CUSTOMER_DLHK"],
+    nonNull: ["K_POS_CUSTOMER_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_CUSTOMER_STG")} AS C

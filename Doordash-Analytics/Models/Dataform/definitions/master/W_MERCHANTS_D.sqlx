@@ -1,0 +1,15 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_DOORDASH",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  }, 
+
+
+}
+
+SELECT
+  *
+FROM
+  ${ref("V_MERCHANTS_STG")} AS C

@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SQUARE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the currency dimension table",
+  columns: {
+ 
+    K_CURRENCY_DLHK: "DataLakeHouse key of the currency",
+  },
+  assertions: {
+    uniqueKey: ["K_CURRENCY_DLHK"],
+    nonNull: ["K_CURRENCY_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_CURRENCY_STG")} AS C

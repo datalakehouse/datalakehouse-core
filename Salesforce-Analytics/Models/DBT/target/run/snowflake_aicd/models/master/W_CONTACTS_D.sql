@@ -1,0 +1,11 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SALESFORCE.W_CONTACTS_D  as
+      (
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SALESFORCE.V_CONTACTS_STG AS C
+      );
+    

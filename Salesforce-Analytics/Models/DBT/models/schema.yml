@@ -1,0 +1,180 @@
+version: 2
+
+
+
+models:  
+  - name:   W_ACCOUNTS_D
+    description: This is the accounts dimension table
+    columns:
+      - name: K_ACCOUNT_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the account
+  - name:   W_ASSETS_D
+    description: This is the assets dimension table
+    columns:
+      - name: K_ASSET_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the asset
+  - name:   W_CAMPAIGNS_F
+    description: This is the campaigns fact table
+    columns:
+      - name: K_CAMPAIGN_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the campaign
+      - name: K_OWNER_USER_DLHK   
+        tests:
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK       
+      - name: K_MODIFIED_BY_USER_DLHK     
+        tests:      
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK    
+      - name: K_CREATED_BY_USER_DLHK           
+        tests:
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK          
+  - name:   W_CASES_F
+    description: This is the cases fact table
+    columns:
+      - name: K_CASE_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the case
+      - name: K_OWNER_USER_DLHK   
+        tests:
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK       
+      - name: K_MODIFIED_BY_USER_DLHK      
+        tests:      
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK    
+      - name: K_CREATED_BY_USER_DLHK           
+        tests:      
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK 
+      - name: K_ACCOUNT_DLHK          
+        tests:      
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK 
+      - name: K_CONTACT_DLHK           
+        tests:      
+          - relationships:
+              to: ref('W_CONTACTS_D')
+              field: K_CONTACT_DLHK 
+  - name:   W_CONTACTS_D
+    description: This is the contacts dimension table
+    columns:
+      - name: K_CONTACT_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the contact
+  - name:   W_CONTRACTS_D
+    description: This is the contracts dimension table
+    columns:
+      - name: K_CONTRACT_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the contract        
+  - name:   W_LEADS_F
+    description: This is the leads fact table
+    columns:
+      - name: K_LEAD_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the lead     
+      - name: K_OWNER_USER_DLHK            
+        tests:
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK       
+      - name: K_MODIFIED_BY_USER_DLHK   
+        tests:              
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK    
+      - name: K_CREATED_BY_USER_DLHK           
+        tests:                  
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK 
+      - name: K_CONVERTED_ACCOUNT_DLHK          
+        tests:              
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK 
+      - name: K_CONVERTED_CONTACT_DLHK           
+        tests:              
+          - relationships:
+              to: ref('W_CONTACTS_D')
+              field: K_CONTACT_DLHK 
+  - name:   W_OPPORTUNITIES_F
+    description: This is the opportunities fact table
+    columns:
+      - name: K_OPPORTUNITY_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the opportunity       
+      - name: K_OWNER_USER_DLHK            
+        tests:
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK       
+      - name: K_MODIFIED_BY_USER_DLHK           
+        tests:                    
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK    
+      - name: K_CREATED_BY_USER_DLHK           
+        tests:                    
+          - relationships:
+              to: ref('W_USERS_D')
+              field: K_USER_DLHK 
+      - name: K_ACCOUNT_DLHK          
+        tests:                    
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK 
+      - name: K_CONTACT_DLHK           
+        tests:                    
+          - relationships:
+              to: ref('W_CONTACTS_D')
+              field: K_CONTACT_DLHK 
+      - name: K_CAMPAIGN_DLHK
+        tests:                    
+        - relationships:
+              to: ref('W_CAMPAIGNS_F')
+              field: K_CAMPAIGN_DLHK 
+  - name:   W_PRODUCT_PRICES_D
+    description: This is the product prices dimension table
+    columns:
+      - name: K_PRODUCT_PRICES_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the product price       
+  - name:   W_USERS_D
+    description: This is the user dimension table
+    columns:
+      - name: K_USER_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the user

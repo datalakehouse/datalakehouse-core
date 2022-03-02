@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SQUARE.W_CUSTOMERS_D  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SQUARE.V_CUSTOMER_STG AS C
+      );
+    

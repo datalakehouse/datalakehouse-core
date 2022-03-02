@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_XERO",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the items dimension table",
+  columns: {
+ 
+    K_ITEM_DLHK: "DataLakeHouse key of the item",
+  },
+  assertions: {
+    uniqueKey: ["K_ITEM_DLHK"],
+    nonNull: ["K_ITEM_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_ITEM_STG")} AS C

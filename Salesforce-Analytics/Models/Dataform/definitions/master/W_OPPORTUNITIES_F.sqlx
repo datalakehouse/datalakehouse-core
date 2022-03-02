@@ -1,0 +1,24 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SALESFORCE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the opportunities fact table",
+  columns: {
+ 
+    K_OPPORTUNITY_DLHK: "DataLakeHouse key of the opportunity",
+  },
+  assertions: {
+    uniqueKey: ["K_OPPORTUNITY_DLHK"],
+    nonNull: ["K_OPPORTUNITY_DLHK"]
+
+  }, 
+
+
+}
+
+SELECT
+  *
+FROM
+  ${ref("V_OPPORTUNITIES_STG")} AS C

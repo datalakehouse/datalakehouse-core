@@ -1,0 +1,24 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SALESFORCE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the assets dimension table",
+  columns: {
+ 
+    K_ASSET_DLHK: "DataLakeHouse key of the asset",
+  },
+  assertions: {
+    uniqueKey: ["K_ASSET_DLHK"],
+    nonNull: ["K_ASSET_DLHK"]
+
+  }, 
+
+
+}
+
+SELECT
+  *
+FROM
+  ${ref("V_ASSETS_STG")} AS C

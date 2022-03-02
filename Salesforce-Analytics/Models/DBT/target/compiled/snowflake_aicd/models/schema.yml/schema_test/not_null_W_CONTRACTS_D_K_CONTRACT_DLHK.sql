@@ -1,0 +1,9 @@
+
+    
+    
+
+select *
+from DEVELOPER_SANDBOX.DBT_SALESFORCE.W_CONTRACTS_D
+where K_CONTRACT_DLHK is null
+
+

@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SQUARE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the merchant location dimension table",
+  columns: {
+ 
+    K_MERCH_LOC_DLHK: "DataLakeHouse key of the currency",
+  },
+  assertions: {
+    uniqueKey: ["K_MERCH_LOC_DLHK"],
+    nonNull: ["K_MERCH_LOC_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_MERCHANT_LOCATION_STG")} AS M

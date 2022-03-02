@@ -1,0 +1,24 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SALESFORCE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the product prices dimension table",
+  columns: {
+ 
+    K_PRODUCT_PRICES_DLHK: "DataLakeHouse key of the product price",
+  },
+  assertions: {
+    uniqueKey: ["K_PRODUCT_PRICES_DLHK"],
+    nonNull: ["K_PRODUCT_PRICES_DLHK"]
+
+  }, 
+
+
+}
+
+SELECT
+  *
+FROM
+  ${ref("V_PRICEBOOK_ENTRY_STG")} AS C

@@ -1,0 +1,137 @@
+version: 2
+
+
+
+models:  
+
+  - name: W_ACCOUNTS_D
+    description: This is the acounts dimension table
+    columns:
+      - name: K_ACCOUNT_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the account
+  - name: W_CUSTOMERS_D
+    description: This is the customers dimension table
+    columns:
+      - name: K_CUSTOMER_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the customer
+  - name: W_EMPLOYEES_D
+    description: This is the employees dimension table
+    columns:
+      - name: K_EMPLOYEE_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the employee
+  - name: W_ITEMS_D
+    description: This is the items dimension table
+    columns:
+      - name: K_ITEM_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the item
+  - name: W_TERM_D
+    description: This is the terms dimension table
+    columns:
+      - name: K_TERM_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the term          
+  - name: W_VENDORS_D
+    description: This is the vendors dimension table
+    columns:
+      - name: K_VENDOR_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the vendor
+  - name: W_BILLS_F
+    description: This is the bills fact table
+    columns:
+      - name: K_BILL_LINE_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the bill line
+    
+      - name: K_ACCOUNT_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK                
+
+      - name: K_BILL_PAYABLE_ACCOUNT_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK        
+
+      - name: K_SALES_TERM_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_TERM_D')
+              field: K_TERM_DLHK
+
+      - name: K_VENDOR_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_VENDORS_D')
+              field: K_VENDOR_DLHK
+
+      - name: K_BILL_CURRENCY_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_CURRENCY_D')
+              field: K_CURRENCY_DLHK
+
+      - name: K_ITEM_EXPENSE_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_ITEMS_D')
+              field: K_ITEM_DLHK
+
+  - name: W_PURCHASES_F
+    description: This is the purchases fact table
+    columns:
+      - name: K_PURCHASE_LINE_DLHK        
+        tests:
+          - unique
+          - not_null
+        description: DataLakeHouse key of the purchase line
+    
+      - name: K_ACCOUNT_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_ACCOUNTS_D')
+              field: K_ACCOUNT_DLHK                
+
+      - name: K_CUSTOMER_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_CUSTOMERS_D')
+              field: K_CUSTOMER_DLHK        
+
+      - name: K_VENDOR_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_VENDORS_D')
+              field: K_VENDOR_DLHK
+
+      - name: K_PURCHASE_CURRENCY_DLHK         
+        tests:
+          - relationships:
+              to: ref('W_CURRENCY_D')
+              field: K_CURRENCY_DLHK
+
+      - name: K_ITEM_EXPENSE_DLHK        
+        tests:
+          - relationships:
+              to: ref('W_ITEMS_D')
+              field: K_ITEM_DLHK

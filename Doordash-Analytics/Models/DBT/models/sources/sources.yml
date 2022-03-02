@@ -1,0 +1,23 @@
+version: 2
+
+sources:      
+  - name: TEST_SCHEMA_EXT_DEV
+    database: DEVELOPER_SANDBOX
+    schema: TEST_SCHEMA_EXT_DEV
+    quoting:
+      identifier: true
+    tables:
+      - name: DOORDASH_RAW
+      - name: COUNTRY_CODES
+      - name: BUDGET_HIST
+
+  - name: STANDARD_TILE
+    description: Snowflake's sample weather data from marketplace
+    database: WEATHERSOURCE_TILE_SAMPLE_SNOWFLAKE_SECURE_SHARE_1622060371935
+    schema: STANDARD_TILE
+    tables:
+      - name: CLIMATOLOGY_DAY
+      - name: FORECAST_DAY
+      - name: HISTORY_DAY
+
+

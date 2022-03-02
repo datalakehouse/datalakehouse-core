@@ -1,0 +1,6 @@
+{
+    "warehouse": "snowflake",
+    "defaultSchema":  "DATAFORM_SQUARE",
+    "assertionSchema":  "DATAFORM_SQUARE",
+    "useRunCache": false
+}

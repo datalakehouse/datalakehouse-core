@@ -1,0 +1,6 @@
+config {
+  type: "declaration",
+  database: "DEVELOPER_SANDBOX",
+  schema: "DEMO_QUICKBOOKS_SANDBOX",
+  name: "INVOICE_LINE"
+}

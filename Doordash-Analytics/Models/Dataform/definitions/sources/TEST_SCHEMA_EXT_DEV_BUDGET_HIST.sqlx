@@ -1,0 +1,6 @@
+config {
+  type: "declaration",
+  database: "DEVELOPER_SANDBOX",
+  schema: "TEST_SCHEMA_EXT_DEV",
+  name: "BUDGET_HIST"
+}

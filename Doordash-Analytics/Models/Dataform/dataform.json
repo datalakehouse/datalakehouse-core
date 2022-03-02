@@ -1,0 +1,6 @@
+{
+    "warehouse": "snowflake",
+    "defaultSchema": "DATAFORM_DOORDASH",
+    "assertionSchema": "DATAFORM_DOORDASH",
+    "useRunCache": false
+}

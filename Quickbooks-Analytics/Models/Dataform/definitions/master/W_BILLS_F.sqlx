@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_QUICKBOOKS",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the bills fact table",
+  columns: {
+ 
+    K_BILL_LINE_DLHK: "DataLakeHouse key of the bill line",
+  },
+  assertions: {
+    uniqueKey: ["K_BILL_LINE_DLHK"],
+    nonNull: ["K_BILL_LINE_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_BILLS_STG")} AS C

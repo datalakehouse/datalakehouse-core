@@ -1,0 +1,24 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_SALESFORCE",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the cases fact table",
+  columns: {
+ 
+    K_CASE_DLHK: "DataLakeHouse key of the case",
+  },
+  assertions: {
+    uniqueKey: ["K_CASE_DLHK"],
+    nonNull: ["K_CASE_DLHK"]
+
+  }, 
+
+
+}
+
+SELECT
+  *
+FROM
+  ${ref("V_CASES_STG")} AS C

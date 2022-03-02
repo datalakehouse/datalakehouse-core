@@ -1,0 +1,34 @@
+ config {
+    snowflake: { 
+     transient: false 
+  }, 
+
+    type: "view",
+    schema: "DATAFORM_SQUARE",
+    tags: ["staging", "daily"]
+     
+}
+ 
+
+WITH source AS (
+  SELECT * FROM  ${ref("DEMO_SQUARE_ALT13","CATALOG_CATEGORY")}
+),
+
+rename as (
+
+
+SELECT
+       --MD5 KEYS
+        MD5( ID ) AS K_POS_CATALOG_CATEGORY_DLHK        
+        --BUSINESS KEYS
+        ,ID AS K_POS_CATALOG_CATEGORY_BK        
+        --DESCRIPTION
+        ,NAME AS A_POS_PRODUCT_CATEGORY        
+        --metadata (MD)
+        , CURRENT_TIMESTAMP AS MD_LOAD_DTS        
+        , (SELECT invocation_id FROM ${ref("H_INVOCATION_ID")}) AS MD_INTGR_ID
+FROM
+    source
+)
+
+SELECT * FROM rename
