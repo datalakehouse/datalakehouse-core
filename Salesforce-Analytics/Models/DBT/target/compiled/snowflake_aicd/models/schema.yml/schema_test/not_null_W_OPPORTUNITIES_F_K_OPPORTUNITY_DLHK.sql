@@ -1,9 +1,0 @@
-
-    
-    
-
-select *
-from DEVELOPER_SANDBOX.DBT_SALESFORCE.W_OPPORTUNITIES_F
-where K_OPPORTUNITY_DLHK is null
-
-
