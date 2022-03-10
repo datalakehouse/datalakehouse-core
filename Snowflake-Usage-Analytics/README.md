@@ -1,4 +1,4 @@
-# Doordash Analytics 
+# Snowflake Usage Analytics 
 
 - [Data Catalog](Data%20Catalog)
 - Models
