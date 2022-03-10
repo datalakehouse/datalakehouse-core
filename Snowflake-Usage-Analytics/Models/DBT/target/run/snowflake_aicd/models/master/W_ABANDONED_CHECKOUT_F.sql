@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SHOPIFY.W_ABANDONED_CHECKOUT_F  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SHOPIFY.V_ABANDONED_CHECKOUT_F_STG AS C
+      );
+    

@@ -1,0 +1,9 @@
+
+    
+    
+
+select *
+from DEVELOPER_SANDBOX.DBT_MCLEOD_SQUARE.W_CATALOG_ITEM_D
+where K_POS_CATALOG_OBJECT_HASH_DLHK is null
+
+

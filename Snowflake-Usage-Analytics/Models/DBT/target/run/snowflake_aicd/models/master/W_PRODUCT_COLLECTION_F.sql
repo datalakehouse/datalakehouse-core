@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SHOPIFY.W_PRODUCT_COLLECTION_F  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SHOPIFY.V_PRODUCT_COLLECTION_STG AS C
+      );
+    

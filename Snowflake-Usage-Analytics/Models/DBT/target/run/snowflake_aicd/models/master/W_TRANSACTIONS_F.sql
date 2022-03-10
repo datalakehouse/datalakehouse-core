@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SHOPIFY.W_TRANSACTIONS_F  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SHOPIFY.V_TRANSACTIONS_STG AS C
+      );
+    
