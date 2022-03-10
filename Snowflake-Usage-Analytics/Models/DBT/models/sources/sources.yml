@@ -1,0 +1,32 @@
+version: 2
+
+sources:      
+  - name: ACCOUNT_USAGE
+    database: SNOWFLAKE
+    schema: ACCOUNT_USAGE
+    quoting:
+      identifier: true
+    tables:      
+      - name: TABLES
+      - name: COLUMNS      
+      - name: DATABASES
+      - name: FILE_FORMATS
+      - name: FUNCTIONS                  
+      - name: LOAD_HISTORY
+      - name: LOGIN_HISTORY
+      - name: QUERY_HISTORY
+      - name: REFERENCIAL_CONSTRAINTS
+      - name: SCHEMADATA
+      - name: SEQUENCES
+      - name: STAGES
+      - name: STORAGE_USAGE      
+      - name: TABLE_CONSTRAINTS
+      - name: TABLE_STORAGE_METRICS
+      - name: VIEWS
+      - name: WAREHOUSE_METERING_HISTORY
+      - name: ACCESS_HISTORY
+      - name: USERS
+
+
+
+       

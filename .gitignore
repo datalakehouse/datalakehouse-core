@@ -16,6 +16,9 @@ Quickbooks-Analytics/Models/DBT/logs
 Doordash-Analytics/Models/DBT/target
 Doordash-Analytics/Models/DBT/dbt_modules
 Doordash-Analytics/Models/DBT/logs
+Snowflake-Usage-Analytics/Models/DBT/target
+Snowflake-Usage-Analytics/Models/DBT/dbt_modules
+Snowflake-Usage-Analytics/Models/DBT/logs
 Doordash-Analytics/Models/Dataform/.df-credentials.json
 Doordash-Analytics/Models/Dataform/node_modules
 Doordash-Analytics/Models/Dataform/.df-credentials.json
@@ -28,3 +31,5 @@ Square-Analytics/Models/Dataform/.df-credentials.json
 Square-Analytics/Models/Dataform/node_modules
 Xero-Analytics/Models/Dataform/.df-credentials.json
 Xero-Analytics/Models/Dataform/node_modules
+Snowflake-Usage-Analytics/Models/Dataform/.df-credentials.json
+Snowflake-Usage-Analytics/Models/Dataform/node_modules
