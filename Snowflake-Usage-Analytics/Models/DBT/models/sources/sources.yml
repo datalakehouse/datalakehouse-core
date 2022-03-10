@@ -26,7 +26,10 @@ sources:
       - name: WAREHOUSE_METERING_HISTORY
       - name: ACCESS_HISTORY
       - name: USERS
-
-
-
-       
+  - name: TEST_SCHEMA_EXT_DEV
+    database: DEVELOPER_SANDBOX    
+    schema: TEST_SCHEMA_EXT_DEV
+    quoting:
+      identifier: true
+    tables:      
+      - name: RATE_SHEET_DAILY
