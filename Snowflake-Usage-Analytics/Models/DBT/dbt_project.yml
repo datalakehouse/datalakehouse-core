@@ -2,9 +2,11 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'snowflake_aicg'
+name: 'snowflake_usage'
 version: '1.0.0'
 config-version: 2
+
+require-dbt-version: ">=0.21.0"
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'snowflake_aicg'
@@ -33,8 +35,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  snowflake_aicd:
+  snowflake_usage:
       # Applies to all files under models/example/
      # example:
          # materialized: view
-    
+vars:
+    snowflake_usage:
+        snowflake_database: SNOWFLAKE
+        account_usage_schema: ACCOUNT_USAGE
+        organization_usage_schema: ORGANIZATION_USAGE

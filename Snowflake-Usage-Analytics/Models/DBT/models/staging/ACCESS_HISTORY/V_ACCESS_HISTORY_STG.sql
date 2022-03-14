@@ -8,7 +8,7 @@
  
 
 WITH source AS (
-  SELECT * FROM  {{source('ACCOUNT_USAGE','ACCESS_HISTORY')}}
+  SELECT * FROM  {{source(var('account_usage_schema'),'ACCESS_HISTORY')}}
 ),
 tables AS (
   SELECT * FROM  {{ref('W_TABLES_D')}}

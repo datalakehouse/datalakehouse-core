@@ -1,9 +1,9 @@
 version: 2
 
 sources:      
-  - name: ACCOUNT_USAGE
-    database: SNOWFLAKE
-    schema: ACCOUNT_USAGE
+  - name: "{{ var('account_usage_schema')}}"
+    database: "{{ var('snowflake_database')}}"
+    schema: "{{ var('account_usage_schema')}}"
     quoting:
       identifier: true
     tables:      
@@ -27,9 +27,9 @@ sources:
       - name: ACCESS_HISTORY
       - name: USERS
       - name: DATABASE_STORAGE_USAGE_HISTORY
-  - name: TEST_SCHEMA_EXT_DEV
-    database: DEVELOPER_SANDBOX    
-    schema: TEST_SCHEMA_EXT_DEV
+  - name: "{{ var('organization_usage_schema')}}"
+    database: "{{ var('snowflake_database')}}"    
+    schema: "{{ var('organization_usage_schema')}}"
     quoting:
       identifier: true
     tables:      

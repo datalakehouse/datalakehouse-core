@@ -8,7 +8,7 @@
  
 
 WITH source AS (
-  SELECT * FROM  {{source('ACCOUNT_USAGE','DATABASE_STORAGE_USAGE_HISTORY')}}
+  SELECT * FROM  {{source(var('account_usage_schema'),'DATABASE_STORAGE_USAGE_HISTORY')}}
 ),
 
 rename as (

@@ -9,7 +9,7 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('ACCOUNT_USAGE','TABLES')}}
+    {{source(var('account_usage_schema'),'TABLES')}}
 ),
 rename AS 
 (   

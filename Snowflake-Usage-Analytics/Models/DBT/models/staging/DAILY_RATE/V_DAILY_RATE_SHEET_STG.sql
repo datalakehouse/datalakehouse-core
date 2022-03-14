@@ -9,7 +9,7 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('TEST_SCHEMA_EXT_DEV','RATE_SHEET_DAILY')}}
+    {{source(var('organization_usage_schema'),'RATE_SHEET_DAILY')}}
 ),
 rename AS 
 (   

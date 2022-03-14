@@ -8,7 +8,7 @@
  
 
 WITH source AS (
-  SELECT * FROM  {{source('ACCOUNT_USAGE','STORAGE_USAGE')}}
+  SELECT * FROM  {{source(var('account_usage_schema'),'STORAGE_USAGE')}}
 ),
 
 rename as (
