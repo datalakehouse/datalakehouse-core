@@ -26,6 +26,7 @@ sources:
       - name: WAREHOUSE_METERING_HISTORY
       - name: ACCESS_HISTORY
       - name: USERS
+      - name: DATABASE_STORAGE_USAGE_HISTORY
   - name: TEST_SCHEMA_EXT_DEV
     database: DEVELOPER_SANDBOX    
     schema: TEST_SCHEMA_EXT_DEV
