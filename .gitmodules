@@ -1,0 +1,3 @@
+[submodule "Salesforce-Analytics/Models/dlh-salesforce-analytics-dbt"]
+	path = Salesforce-Analytics/Models/dlh-salesforce-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dbt
