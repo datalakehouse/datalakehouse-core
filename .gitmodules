@@ -1,3 +1,9 @@
 [submodule "Salesforce-Analytics/Models/dlh-salesforce-analytics-dbt"]
 	path = Salesforce-Analytics/Models/dlh-salesforce-analytics-dbt
 	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dbt
+[submodule "Salesforce-Analytics/Models/DBT/dlh-salesforce-analytics-dbt"]
+	path = Salesforce-Analytics/Models/DBT/dlh-salesforce-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dbt
+[submodule "Salesforce-Analytics/Models/Dataform/dlh-salesforce-analytics-dataform"]
+	path = Salesforce-Analytics/Models/Dataform/dlh-salesforce-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dataform

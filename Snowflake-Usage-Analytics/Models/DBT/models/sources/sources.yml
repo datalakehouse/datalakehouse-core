@@ -28,7 +28,7 @@ sources:
       - name: USERS
       - name: DATABASE_STORAGE_USAGE_HISTORY
   - name: "{{ var('organization_usage_schema')}}"
-    database: "{{ var('snowflake_database')}}"    
+    database: DEVELOPER_SANDBOX    
     schema: "{{ var('organization_usage_schema')}}"
     quoting:
       identifier: true

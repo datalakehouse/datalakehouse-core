@@ -43,4 +43,4 @@ vars:
     snowflake_usage:
         snowflake_database: SNOWFLAKE
         account_usage_schema: ACCOUNT_USAGE
-        organization_usage_schema: ORGANIZATION_USAGE
+        organization_usage_schema: TEST_SCHEMA_EXT_DEV

@@ -1,6 +1,0 @@
-{
-    "warehouse": "snowflake",
-    "defaultSchema":  "DATAFORM_SALESFORCE",
-    "assertionSchema":  "DATAFORM_SALESFORCE",
-    "useRunCache": false
-}
