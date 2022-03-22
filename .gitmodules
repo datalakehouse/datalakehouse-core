@@ -16,3 +16,9 @@
 [submodule "Salesforce-Analytics/Models/DBT/--force"]
 	path = Salesforce-Analytics/Models/DBT/--force
 	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dbt
+[submodule "Xero-Analytics/Models/Dataform/dlh-xero-analytics-dataform"]
+	path = Xero-Analytics/Models/Dataform/dlh-xero-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-xero-analytics-dataform.git
+[submodule "Xero-Analytics/Models/DBT/dlh-xero-analytics-dbt"]
+	path = Xero-Analytics/Models/DBT/dlh-xero-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-xero-analytics-dbt.git
