@@ -7,3 +7,9 @@
 [submodule "Salesforce-Analytics/Models/Dataform/dlh-salesforce-analytics-dataform"]
 	path = Salesforce-Analytics/Models/Dataform/dlh-salesforce-analytics-dataform
 	url = https://github.com/datalakehouse/dlh-salesforce-analytics-dataform
+[submodule "Square-Analytics/Models/DBT/dlh-square-analytics-dbt"]
+	path = Square-Analytics/Models/DBT/dlh-square-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-square-analytics-dbt
+[submodule "Square-Analytics/Models/Dataform/dlh-square-analytics-dataform"]
+	path = Square-Analytics/Models/Dataform/dlh-square-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-square-analytics-dataform

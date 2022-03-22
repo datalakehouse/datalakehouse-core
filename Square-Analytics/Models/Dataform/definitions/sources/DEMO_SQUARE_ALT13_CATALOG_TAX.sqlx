@@ -1,6 +1,0 @@
-config {
-  type: "declaration",
-  database: "DEVELOPER_SANDBOX",
-  schema: "DEMO_SQUARE_ALT13",
-  name: "CATALOG_TAX"
-}
