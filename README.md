@@ -1,10 +1,10 @@
- <img width="300" src="https://cdn.datalakehouse.io/media/datalakehouse_logo_100x540px.png" alt="DataLakeHouse.io">
+ <img width="300" src="https://cdn.datalakehouse.io/media/datalakehouse_logo_blue_100x540px.png" alt="DataLakeHouse.io">
 
 <a href="https://www.datalakehouse.io?utm_medium=community&utm_source=github&utm_campaign=dlh_core_repo">Website</a>
 <span> | </span>
 <a href="https://docs.datalakehouse.io?utm_medium=community&utm_source=github&utm_campaign=dlh_repo">Docs</a>
 <span> | </span>
-<a href="https://datalakehouse.slack.com/datalakehouse">Community Slack</a>
+<a href="https://join.slack.com/t/datalakehouse/shared_invite/zt-15uz5i22r-tgX1BQvSfadu1iA39SmRaQ">Community Slack</a>
 <span> | </span>
 <a href="https://docs.datalakehouse.io/code-contribution-guide">Contribute</a>
 
@@ -20,3 +20,5 @@
 If you like our project then we would really appreciate **a Star ⭐!**
 
 Start synchronizing your operational applications and databases at [DataLakeHouse.io](https://datalakehouse.io)
+
+Join our Slack Community when you get the chance. Your feedback is important to us, like source control is to DBT. :).
