@@ -1,5 +1,0 @@
-config {
-  type: "table" ,
-  schema: "DATAFORM_QUICKBOOKS"
-} 
- SELECT uuid_string() as invocation_id from dual

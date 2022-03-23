@@ -22,3 +22,9 @@
 [submodule "Xero-Analytics/Models/DBT/dlh-xero-analytics-dbt"]
 	path = Xero-Analytics/Models/DBT/dlh-xero-analytics-dbt
 	url = https://github.com/datalakehouse/dlh-xero-analytics-dbt.git
+[submodule "Quickbooks-Analytics/Models/Dataform/dlh-quickbooks-analytics-dataform"]
+	path = Quickbooks-Analytics/Models/Dataform/dlh-quickbooks-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-quickbooks-analytics-dataform.git
+[submodule "Quickbooks-Analytics/Models/DBT/dlh-quickbooks-analytics-dbt"]
+	path = Quickbooks-Analytics/Models/DBT/dlh-quickbooks-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-quickbooks-analytics-dbt.git
