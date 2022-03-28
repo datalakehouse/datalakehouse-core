@@ -34,3 +34,9 @@
 [submodule "Snowflake-Usage-Analytics/Models/Dataform/dlh-snowflake-analytics-dataform"]
 	path = Snowflake-Usage-Analytics/Models/Dataform/dlh-snowflake-analytics-dataform
 	url = https://github.com/datalakehouse/dlh-snowflake-analytics-dataform
+[submodule "Doordash-Analytics/Models/Dataform/dlh-doordash-analytics-dataform"]
+	path = Doordash-Analytics/Models/Dataform/dlh-doordash-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-doordash-analytics-dataform
+[submodule "Doordash-Analytics/Models/DBT/dlh-doordash-analytics-dbt"]
+	path = Doordash-Analytics/Models/DBT/dlh-doordash-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-doordash-analytics-dbt

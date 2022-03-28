@@ -1,6 +1,0 @@
-config {
-  type: "declaration",
-  database: "WEATHERSOURCE_TILE_SAMPLE_SNOWFLAKE_SECURE_SHARE_1622060371935",
-  schema: "STANDARD_TILE",
-  name: "FORECAST_DAY"
-}

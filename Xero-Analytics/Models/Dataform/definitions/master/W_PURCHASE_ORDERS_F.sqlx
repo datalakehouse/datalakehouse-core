@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_XERO",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the purchase orders fact table",
+  columns: {
+ 
+    K_PURCHASE_LINE_ITEM_DLHK: "DataLakeHouse key of the purchase order",
+  },
+  assertions: {
+    uniqueKey: ["K_PURCHASE_LINE_ITEM_DLHK"],
+    nonNull: ["K_PURCHASE_LINE_ITEM_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_PURCHASE_ORDERS_STG")} AS C

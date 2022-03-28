@@ -1,0 +1,25 @@
+ config {
+  type: "table",
+  schema: "DATAFORM_XERO",
+  tags: ["staging", "daily"],
+  snowflake: { 
+     transient: false 
+  },  description: "This is the receipts fact table",
+  columns: {
+ 
+    K_RECEIPT_LINE_DLHK: "DataLakeHouse key of the receipt",
+  },
+  assertions: {
+    uniqueKey: ["K_RECEIPT_LINE_DLHK"],
+    nonNull: ["K_RECEIPT_LINE_DLHK"]
+
+  }, 
+
+
+}
+
+
+SELECT
+  *
+FROM
+  ${ref("V_RECEIPTS_STG")} AS C
