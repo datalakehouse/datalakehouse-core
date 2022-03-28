@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SNOWFLAKE_USAGE.W_COLUMNS_D  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SNOWFLAKE_USAGE.V_COLUMNS_STG AS C
+      );
+    

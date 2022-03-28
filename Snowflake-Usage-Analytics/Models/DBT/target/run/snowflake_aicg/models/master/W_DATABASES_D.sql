@@ -1,0 +1,12 @@
+
+
+      create or replace  table DEVELOPER_SANDBOX.DBT_SNOWFLAKE_USAGE.W_DATABASES_D  as
+      (
+
+
+SELECT
+  *
+FROM
+  DEVELOPER_SANDBOX.DBT_SNOWFLAKE_USAGE.V_DATABASES_STG AS C
+      );
+    
