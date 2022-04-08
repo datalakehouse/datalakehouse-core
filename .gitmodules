@@ -40,3 +40,21 @@
 [submodule "Doordash-Analytics/Models/DBT/dlh-doordash-analytics-dbt"]
 	path = Doordash-Analytics/Models/DBT/dlh-doordash-analytics-dbt
 	url = https://github.com/datalakehouse/dlh-doordash-analytics-dbt
+[submodule "Doordash-Analytics/Reporting-Analytics/Looker/dlh-doordash-analytics-looker"]
+	path = Doordash-Analytics/Reporting-Analytics/Looker/dlh-doordash-analytics-looker
+	url = https://github.com/datalakehouse/dlh-doordash-analytics-looker.git
+[submodule "Quickbooks-Analytics/Reporting-Analytics/Looker/dlh-quickbooks-analytics-looker"]
+	path = Quickbooks-Analytics/Reporting-Analytics/Looker/dlh-quickbooks-analytics-looker
+	url = https://github.com/datalakehouse/dlh-quickbooks-analytics-looker.git
+[submodule "Xero-Analytics/Reporting-Analytics/Looker/dlh-xero-analytics-looker"]
+	path = Xero-Analytics/Reporting-Analytics/Looker/dlh-xero-analytics-looker
+	url = https://github.com/datalakehouse/dlh-xero-analytics-looker.git
+[submodule "Salesforce-Analytics/Reporting-Analytics/Looker/dlh-salesforce-analytics-looker"]
+	path = Salesforce-Analytics/Reporting-Analytics/Looker/dlh-salesforce-analytics-looker
+	url = https://github.com/datalakehouse/dlh-salesforce-analytics-looker.git
+[submodule "Snowflake-Usage-Analytics/Reporting-Analytics/Looker/dlh-snowflake-analytics-looker"]
+	path = Snowflake-Usage-Analytics/Reporting-Analytics/Looker/dlh-snowflake-analytics-looker
+	url = https://github.com/datalakehouse/dlh-snowflake-analytics-looker.git
+[submodule "Square-Analytics/Reporting-Analytics/Looker/dlh-square-analytics-looker"]
+	path = Square-Analytics/Reporting-Analytics/Looker/dlh-square-analytics-looker
+	url = https://github.com/datalakehouse/dlh-square-analytics-looker.git
