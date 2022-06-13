@@ -58,3 +58,9 @@
 [submodule "Square-Analytics/Reporting-Analytics/Looker/dlh-square-analytics-looker"]
 	path = Square-Analytics/Reporting-Analytics/Looker/dlh-square-analytics-looker
 	url = https://github.com/datalakehouse/dlh-square-analytics-looker.git
+[submodule "Stripe-Analytics/Models/DBT/dlh-stripe-analytics-dbt"]
+	path = Stripe-Analytics/Models/DBT/dlh-stripe-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-stripe-analytics-dbt.git
+[submodule "Stripe-Analytics/Models/Dataform/dlh-stripe-analytics-dataform"]
+	path = Stripe-Analytics/Models/Dataform/dlh-stripe-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-stripe-analytics-dataform.git
