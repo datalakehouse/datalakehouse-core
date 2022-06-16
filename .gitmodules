@@ -64,3 +64,9 @@
 [submodule "Stripe-Analytics/Models/Dataform/dlh-stripe-analytics-dataform"]
 	path = Stripe-Analytics/Models/Dataform/dlh-stripe-analytics-dataform
 	url = https://github.com/datalakehouse/dlh-stripe-analytics-dataform.git
+[submodule "Bill-com-Analytics/Models/Dataform/dlh-bill-dot-com-analytics-dataform"]
+	path = Bill-com-Analytics/Models/Dataform/dlh-bill-dot-com-analytics-dataform
+	url = https://github.com/datalakehouse/dlh-bill-dot-com-analytics-dataform.git
+[submodule "Bill-com-Analytics/Models/DBT/dlh-bill-dot-com-analytics-dbt"]
+	path = Bill-com-Analytics/Models/DBT/dlh-bill-dot-com-analytics-dbt
+	url = https://github.com/datalakehouse/dlh-bill-dot-com-analytics-dbt.git
